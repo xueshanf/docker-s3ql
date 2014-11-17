@@ -2,14 +2,17 @@ docker-s3ql
 ===========
 
 Docker build for s3ql-2.12.
-Copy authinfo2.sample to authinfo2 and configure with your S3 crendential to a s3 bucket. 
 
-To run the image:
+To use the image:
+1. Create an AWS bucket.
+2. Create an IAM user with proper bucket policy.
+3. Copy authinfo2.sample to authinfo2 and configure with your S3 crendential to the s3 bucket. 
+4. Run the image
 
-    docker pull xueshanf/s3ql
-    docker run --rm --privileged=true -it xueshanf/s3ql
+        docker pull xueshanf/s3ql
+        docker run --rm --privileged=true -it xueshanf/s3ql
 
-You are dropped to /bin/bash command inside of the container.
+    You are dropped to /bin/bash command inside of the container.
 
 See s3ql documentation about how to use s3ql.
 
