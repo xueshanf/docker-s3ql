@@ -1,0 +1,9 @@
+[s3-test]
+test-fs: s3://<bucket>/<path>
+backend-login: <AWS access key>
+backend-password: <AWS access secret>
+
+[joe-home]
+storage-url: s3://<bucket/joe-home
+backend-login: <AWS access key>
+backend-password: <AWS access secret>
