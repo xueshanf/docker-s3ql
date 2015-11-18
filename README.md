@@ -1,7 +1,7 @@
 docker-s3ql
 ===========
 
-Docker build for s3ql-2.12.
+Docker build for s3ql-2.15.
 
 To use the image:
 
