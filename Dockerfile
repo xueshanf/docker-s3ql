@@ -15,7 +15,7 @@ RUN pip3 install defusedxml dugong requests pycrypto
 # This module doesn't exist in ubuntu:14:04 default repo. Get it from bitbucket. 
 RUN wget -nv -O /usr/src/${VERSION}.tar.bz2  https://bitbucket.org/nikratio/s3ql/downloads/${VERSION}.tar.bz2
 RUN tar xvj -C /usr/src -f /usr/src/${VERSION}.tar.bz2
-WORKDIR /usr/src/${VERSION}.tar.bz2
+WORKDIR /usr/src/${VERSION}
 RUN python3 setup.py build_ext --inplace
 RUN python3 setup.py install
 
